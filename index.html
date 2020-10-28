@@ -1,17 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Ropa+Sans:ital@0;1&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Document</title>
+   </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <button class="load">Load</button>
-    <button class="next">Next</button>
-    <script src="js/main.js"></script>
-</body>
-
+   <body>
+      <header>
+         <h1>
+            start wars <br />
+            catalog
+         </h1>
+      </header>
+      <main>
+         <div class="container">
+            <article class="characters">
+               <div class="character-title">
+                  <h4>Characters</h4>
+               </div>
+               <section>
+                  <ul>
+                     <li class="char1 bgc-dim">Luke</li>
+                     <li class="char2 bgc-light">Luke</li>
+                     <li class="char3 bgc-dim">Luke</li>
+                     <li class="char4 bgc-light">Luke</li>
+                     <li class="char5 bgc-dim">Luke</li>
+                     <li class="char6 bgc-light">Luke</li>
+                     <li class="char7 bgc-dim">Luke</li>
+                     <li class="char8 bgc-light">Luke</li>
+                     <li class="char9 bgc-dim">Luke</li>
+                     <li class="char10 bgc-light">Luke</li>
+                  </ul>
+               </section>
+               <div class="btn">
+                  <button class="load">Load</button>
+                  <p>1/8</p>
+                  <button class="next">Next</button>
+               </div>
+            </article>
+            <article class="details">
+               <div class="detail-title">
+                  <h4>Details</h4>
+               </div>
+               <section class="self-info">
+                  <p class="name">Luke</p>
+                  <p class="heigh">172 cm</p>
+                  <p class="mass">77 kg</p>
+                  <p class="hair">blond</p>
+                  <p class="skin">fair</p>
+                  <p class="eye">blue</p>
+                  <p class="bday">19BBY</p>
+                  <p class="gender">male</p>
+               </section>
+               <section class="home-world-info">
+                  <p class="planet">Tattoiin</p>
+                  <p class="rotation">23h</p>
+                  <p class="orbit">304 days</p>
+                  <p class="diameter">10465km</p>
+                  <p class="climate">Arid</p>
+                  <p class="gravity">1 standard</p>
+                  <p class="terrian">Desert</p>
+               </section>
+            </article>
+         </div>
+      </main>
+      <script src="js/main.js"></script>
+   </body>
 </html>

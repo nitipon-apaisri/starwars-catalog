@@ -1,4 +1,116 @@
+p, h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 1366px;
+  margin: auto;
+  padding: 0;
+  font-family: "Ropa Sans", sans-serif;
+}
+
+body header {
+  height: 353px;
+  background-image: url(../assets/sw-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body header h1 {
+  color: #ffd600;
+  font-weight: lighter;
+}
+
+body main {
+  background-color: #424242;
+  padding: 50px;
+}
+
 body main .container {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .container .characters {
+  margin-top: -75px;
+  width: 25%;
+  background-color: #8e8e8e;
+}
+
+body main .container .characters .character-title {
+  background-color: #535556;
+  padding: 1rem;
+  text-align: center;
+  color: #ffd600;
+  font-size: 1.3rem;
+  letter-spacing: 0.25rem;
+}
+
+body main .container .characters section ul {
+  margin-top: 0;
+  padding: 0;
+}
+
+body main .container .characters section ul li {
+  list-style: none;
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+}
+
+body main .container .characters section ul li:hover {
+  background-color: #444444;
+}
+
+body main .container .characters section ul li:active {
+  background-color: #444444;
+}
+
+body main .container .characters section ul .bgc-dim {
+  background-color: #8e8e8e;
+}
+
+body main .container .characters section ul .bgc-light {
+  background-color: #e1dede;
+}
+
+body main .container .characters .btn {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .container .details {
+  margin-top: -75px;
+  width: 25%;
+  font-family: "Roboto", sans-serif;
+}
+
+body main .container .details .detail-title {
+  background-color: #748687;
+  padding: 1rem;
+  text-align: center;
+  color: #ffd600;
+  font-size: 1.3rem;
+  letter-spacing: 0.25rem;
+}
+
+body main .container .details .self-info {
+  padding: 8px;
+  background-color: #c4c4c4;
+}
+
+body main .container .details .home-world-info {
+  padding: 8px;
+  background-color: #8e8e8e;
 }
 /*# sourceMappingURL=style.css.map */

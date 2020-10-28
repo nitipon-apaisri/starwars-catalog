@@ -1,7 +1,105 @@
+$dim-grey: #8e8e8e;
+$dimmer-grey: #424242;
+$dimmerr-grey: #535556;
+$dimmest-grey: #444444;
+$dim-green: #748687;
+$light-grey: #e1dede;
+$lighter-grey: #c4c4c4;
+$star-yellow: #ffd600;
+$ropa-font: "Ropa Sans", sans-serif;
+//prettier-ignore
+p,h1,h2,h3,h4,h5 {
+   padding: 0;
+   margin: 0;
+}
+
 body {
+   width: 1366px;
+   margin: auto;
+   padding: 0;
+   font-family: $ropa-font;
+   header {
+      height: 353px;
+      background-image: url(../assets/sw-header.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      h1 {
+         color: $star-yellow;
+         font-weight: lighter;
+      }
+   }
    main {
+      background-color: $dimmer-grey;
+      padding: 50px;
       .container {
-         display: block;
+         display: flex;
+         justify-content: space-around;
+         @mixin infos {
+            margin-top: -75px;
+            width: 25%;
+         }
+         @mixin title {
+            padding: 1rem;
+            text-align: center;
+            color: $star-yellow;
+            font-size: 1.3rem;
+            letter-spacing: 0.25rem;
+         }
+         .characters {
+            @include infos;
+            background-color: $dim-grey;
+            .character-title {
+               background-color: $dimmerr-grey;
+               @include title;
+            }
+            section {
+               ul {
+                  margin-top: 0;
+                  padding: 0;
+                  li {
+                     list-style: none;
+                     font-size: 1rem;
+                     letter-spacing: 0.125rem;
+                     font-weight: 400;
+                     padding: 8px;
+                     font-family: "Roboto", sans-serif;
+                  }
+                  li:hover {
+                     background-color: $dimmest-grey;
+                  }
+                  li:active {
+                     background-color: $dimmest-grey;
+                  }
+                  .bgc-dim {
+                     background-color: $dim-grey;
+                  }
+                  .bgc-light {
+                     background-color: $light-grey;
+                  }
+               }
+            }
+            .btn {
+               padding: 20px;
+               display: flex;
+               justify-content: space-around;
+            }
+         }
+         .details {
+            @include infos;
+            font-family: "Roboto", sans-serif;
+            .detail-title {
+               background-color: $dim-green;
+               @include title;
+            }
+            .self-info {
+               padding: 8px;
+               background-color: $lighter-grey;
+            }
+            .home-world-info {
+               padding: 8px;
+               background-color: $dim-grey;
+            }
+         }
       }
    }
 }
