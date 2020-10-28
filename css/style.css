@@ -68,7 +68,7 @@ body main .container .characters section ul li:hover {
   background-color: #444444;
 }
 
-body main .container .characters section ul li:active {
+body main .container .characters section ul .active {
   background-color: #444444;
 }
 

@@ -40,3 +40,15 @@ document.querySelector(".next").addEventListener("click", async () => {
          console.log(char.results);
       });
 });
+let addActiveClass = () => {
+   let nameList = document.querySelector(".container > .characters > section > ul > li");
+   nameList.classList.add(".active");
+   console.log("yo");
+};
+let nameList = document.querySelectorAll(".container > .characters > section > ul > li");
+for (let i of nameList) {
+   i.addEventListener("click", () => {
+      addActiveClass();
+      console.log("hi");
+   });
+}
