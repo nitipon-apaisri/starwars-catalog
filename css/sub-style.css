@@ -1,0 +1,38 @@
+
+.container {
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/sw-header.jpg);
+}
+h1 {
+    font-family: 'Ropa Sans', sans-serif;
+    color: rgb(221, 248, 103);
+    font-size: 40px;
+    font-weight: lighter;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+    height: 353px;
+    width: 1280px;
+    top: 43px;
+    background-color: darkslategray;
+}
+.characters{
+    height: 450px;
+    width: 400px;
+    background-color: #bbb7b7;
+}
+
+.characters > ul > li.li1 {
+    background-color: dimgrey;
+    height: 30px;
+    width: 400px;
+}
+.details {
+    width: 400px;
+    height: 450px;
+    background-color: dimgrey;
+}
