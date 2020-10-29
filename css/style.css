@@ -105,11 +105,13 @@ body main .container .details .detail-title {
 }
 
 body main .container .details .self-info {
+  height: 243.5px;
   padding: 8px;
   background-color: #c4c4c4;
 }
 
 body main .container .details .home-world-info {
+  height: 243.5px;
   padding: 8px;
   background-color: #8e8e8e;
 }

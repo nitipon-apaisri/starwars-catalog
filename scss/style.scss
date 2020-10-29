@@ -92,10 +92,12 @@ body {
                @include title;
             }
             .self-info {
+               height: 243.5px;
                padding: 8px;
                background-color: $lighter-grey;
             }
             .home-world-info {
+               height: 243.5px;
                padding: 8px;
                background-color: $dim-grey;
             }
