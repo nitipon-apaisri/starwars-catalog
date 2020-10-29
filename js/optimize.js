@@ -67,11 +67,14 @@ fetch(currLink)
    });
 let nextBtn = document.querySelector(".next");
 let count = 1;
-nextBtn.addEventListener("click", async () => {
+function increasePage() {
    count++;
    let pageNr = document.querySelector("main > .container > .characters > .btn > p");
    pageNr.innerHTML = count + "/8";
    console.log(count);
+}
+nextBtn.addEventListener("click", async () => {
+   increasePage();
    await fetch(currLink)
       .then((res) => res.json())
       .then((link) => {
@@ -145,11 +148,14 @@ nextBtn.addEventListener("click", async () => {
          }
       });
 });
-document.querySelector(".back").addEventListener("click", async () => {
+function decreasePage() {
    count--;
    let pageNr = document.querySelector("main > .container > .characters > .btn > p");
    pageNr.innerHTML = count + "/8";
    console.log(count);
+}
+document.querySelector(".back").addEventListener("click", async () => {
+   decreasePage();
    await fetch(currLink)
       .then((res) => res.json())
       .then((link) => {
