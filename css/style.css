@@ -147,7 +147,7 @@ body main .container {
 
 body main .container .characters {
   margin-top: -75px;
-  width: 25%;
+  width: 40%;
   background-color: #8e8e8e;
 }
 
@@ -160,12 +160,12 @@ body main .container .characters .character-title {
   letter-spacing: 0.25rem;
 }
 
-body main .container .characters section ul {
+body main .container .characters .cList ul {
   margin-top: 0;
   padding: 0;
 }
 
-body main .container .characters section ul li {
+body main .container .characters .cList ul li {
   list-style: none;
   font-size: 1rem;
   letter-spacing: 0.125rem;
@@ -174,19 +174,19 @@ body main .container .characters section ul li {
   font-family: "Roboto", sans-serif;
 }
 
-body main .container .characters section ul li:hover {
+body main .container .characters .cList ul li:hover {
   background-color: #444444;
 }
 
-body main .container .characters section ul .active {
+body main .container .characters .cList ul .active {
   background-color: #444444;
 }
 
-body main .container .characters section ul .bgc-dim {
+body main .container .characters .cList ul .bgc-dim {
   background-color: #8e8e8e;
 }
 
-body main .container .characters section ul .bgc-light {
+body main .container .characters .cList ul .bgc-light {
   background-color: #e1dede;
 }
 
@@ -201,7 +201,7 @@ body main .container .characters .btn {
 
 body main .container .details {
   margin-top: -75px;
-  width: 25%;
+  width: 40%;
 }
 
 body main .container .details .detail-title {
@@ -216,7 +216,7 @@ body main .container .details .detail-title {
 body main .container .details .self-info {
   font-family: "Roboto", sans-serif;
   height: 243.5px;
-  padding: 8px;
+  padding: 20px;
   background-color: #c4c4c4;
 }
 
@@ -224,14 +224,37 @@ body main .container .details .self-info ul li {
   list-style: none;
 }
 
-body main .container .details .home-world-info {
-  font-family: "Roboto", sans-serif;
-  height: 243.5px;
-  padding: 8px;
+body main .container .details .sub-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #c4c4c4;
+}
+
+body main .container .details .sub-list ul li {
+  background-color: #e1dede;
+  list-style: none;
+  padding: 5px 28px;
+  font-size: 1.125rem;
+  font-weight: lighter;
+  color: #8c7600;
+  border-radius: 4px 4px 0 0;
+}
+
+body main .container .details .sub-list ul li:hover {
   background-color: #8e8e8e;
 }
 
-body main .container .details .home-world-info ul li {
+body main .container .details .sub-info {
+  font-family: "Roboto", sans-serif;
+  height: 243.5px;
+  padding: 20px;
+  background-color: #8e8e8e;
+}
+
+body main .container .details .sub-info ul li {
   list-style: none;
 }
 /*# sourceMappingURL=style.css.map */

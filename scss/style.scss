@@ -140,7 +140,7 @@ body {
          justify-content: space-around;
          @mixin infos {
             margin-top: -75px;
-            width: 25%;
+            width: 40%;
          }
          @mixin title {
             padding: 1rem;
@@ -156,7 +156,7 @@ body {
                background-color: $dimmerr-grey;
                @include title;
             }
-            section {
+            .cList {
                ul {
                   margin-top: 0;
                   padding: 0;
@@ -197,7 +197,7 @@ body {
             .self-info {
                font-family: "Roboto", sans-serif;
                height: 243.5px;
-               padding: 8px;
+               padding: 20px;
                background-color: $lighter-grey;
                ul {
                   li {
@@ -205,10 +205,29 @@ body {
                   }
                }
             }
-            .home-world-info {
+            .sub-list {
+               ul {
+                  display: flex;
+                  justify-content: space-around;
+                  background-color: $lighter-grey;
+                  li {
+                     background-color: $light-grey;
+                     list-style: none;
+                     padding: 5px 28px;
+                     font-size: 1.125rem;
+                     font-weight: lighter;
+                     color: #8c7600;
+                     border-radius: 4px 4px 0 0;
+                  }
+                  li:hover {
+                     background-color: $dim-grey;
+                  }
+               }
+            }
+            .sub-info {
                font-family: "Roboto", sans-serif;
                height: 243.5px;
-               padding: 8px;
+               padding: 20px;
                background-color: $dim-grey;
                ul {
                   li {

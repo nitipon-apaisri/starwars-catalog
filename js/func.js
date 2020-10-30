@@ -1,56 +1,81 @@
-let increasePage = () => {
+const increasePage = () => {
    count++;
-   let pageNr = document.querySelector("main > .container > .characters > .btn > p");
+   const pageNr = document.querySelector("main > .container > .characters > .btn > p");
    pageNr.innerHTML = count + "/8";
    console.log(count);
 };
-let decreasePage = () => {
+const decreasePage = () => {
    count--;
-   let pageNr = document.querySelector("main > .container > .characters > .btn > p");
+   const pageNr = document.querySelector("main > .container > .characters > .btn > p");
    pageNr.innerHTML = count + "/8";
    console.log(count);
 };
-let hideCharacterList = () => {
-   let cList = document.querySelector(".cList");
+const hideCharacterList = () => {
+   const cList = document.querySelector(".cList");
    cList.classList.add("hide");
 };
-let hideCharacterDetails = () => {
-   let cSelfInfo = document.querySelector(".self-info > ul");
+const hideCharacterDetails = () => {
+   const cSelfInfo = document.querySelector(".self-info > ul");
    cSelfInfo.classList.add("hide");
-   let cHome = document.querySelector(".home-world-info > ul");
+   const cHome = document.querySelector(".sub-info > ul");
    cHome.classList.add("hide");
 };
-let showCharacterList = () => {
-   let cList = document.querySelector(".cList");
+const showCharacterList = () => {
+   const cList = document.querySelector(".cList");
    cList.classList.remove("hide");
 };
-let showCharacterDetails = () => {
-   let cSelfInfo = document.querySelector(".self-info > ul");
+const showCharacterDetails = () => {
+   const cSelfInfo = document.querySelector(".self-info > ul");
    cSelfInfo.classList.remove("hide");
-   let cHome = document.querySelector(".home-world-info > ul");
+   const cHome = document.querySelector(".sub-info > ul");
    cHome.classList.remove("hide");
 };
-let showPreLoaderChracter = () => {
-   let preLoader = document.querySelector(".loader-chracter");
+const showPreLoaderChracter = () => {
+   const preLoader = document.querySelector(".loader-chracter");
    preLoader.classList.remove("hide");
 };
-let hidePreLoaderChracter = () => {
-   let preLoader = document.querySelector(".loader-chracter");
+const hidePreLoaderChracter = () => {
+   const preLoader = document.querySelector(".loader-chracter");
    preLoader.classList.add("hide");
 };
-let showPreLoaderDetails = () => {
-   let preLoader = document.querySelector(".loader-details");
+const showPreLoaderDetails = () => {
+   const preLoader = document.querySelector(".loader-details");
    preLoader.classList.remove("hide");
 };
-let hidePreLoaderDetails = () => {
-   let preLoader = document.querySelector(".loader-details");
+const hidePreLoaderDetails = () => {
+   const preLoader = document.querySelector(".loader-details");
    preLoader.classList.add("hide");
 };
-let showPreLoaderWorldDetails = () => {
-   let preLoader = document.querySelector(".loader-world-details");
+const showPreLoaderSubDetails = () => {
+   const preLoader = document.querySelector(".loader-sub-details");
    preLoader.classList.remove("hide");
 };
-let hidePreLoaderWorldDetails = () => {
-   let preLoader = document.querySelector(".loader-world-details");
+const hidePreLoaderSubDetails = () => {
+   const preLoader = document.querySelector(".loader-sub-details");
    preLoader.classList.add("hide");
+};
+
+const hideHomeWorld = () => {
+   const homeWorld = document.querySelector(".home-world-info");
+   homeWorld.classList.add("hide");
+};
+const showHomeWorld = () => {
+   const homeWorld = document.querySelector(".home-world-info");
+   homeWorld.classList.remove("hide");
+};
+const hideSpeciesInfo = () => {
+   const speciesInfo = document.querySelector(".species-info");
+   speciesInfo.classList.add("hide");
+};
+const showSpeciesInfo = () => {
+   const speciesInfo = document.querySelector(".species-info");
+   speciesInfo.classList.remove("hide");
+};
+const hideVehicleInfo = () => {
+   const vehicleInfo = document.querySelector(".vehicle-info");
+   vehicleInfo.classList.add("hide");
+};
+const showVehicleInfo = () => {
+   const vehicleInfo = document.querySelector(".vehicle-info");
+   vehicleInfo.classList.remove("hide");
 };
