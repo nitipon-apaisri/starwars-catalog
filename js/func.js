@@ -9,6 +9,7 @@ let decreasePage = () => {
    let pageNr = document.querySelector("main > .container > .characters > .btn > p");
    pageNr.innerHTML = count + "/8";
    console.log(count);
+   return count;
 };
 let hideCharacterList = () => {
    let cList = document.querySelector(".cList");
