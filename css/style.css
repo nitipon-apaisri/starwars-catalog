@@ -192,10 +192,12 @@ body main .container .characters section.cList ul .active {
 }
 
 body main .container .characters section.cList ul .bgc-dim {
-  background-color: #8e8e8e;
+  padding: 5px;
+  background-color: #424242;
 }
 
 body main .container .characters section.cList ul .bgc-light {
+  padding: 5px;
   background-color: #e1dede;
 }
 

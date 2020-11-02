@@ -182,9 +182,11 @@ body {
                      background-color: $dimmest-grey;
                   }
                   .bgc-dim {
-                     background-color: $dim-grey;
+                     padding: 5px;
+                     background-color: $dimmer-grey;
                   }
                   .bgc-light {
+                     padding: 5px;
                      background-color: $light-grey;
                   }
                }
