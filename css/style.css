@@ -160,12 +160,21 @@ body main .container .characters .character-title {
   letter-spacing: 0.25rem;
 }
 
-body main .container .characters section ul {
+body main .container .characters section.into {
+  margin: 100px;
+  text-align: center;
+}
+
+body main .container .characters section.into h1 {
+  width: 100%;
+}
+
+body main .container .characters section.cList ul {
   margin-top: 0;
   padding: 0;
 }
 
-body main .container .characters section ul li {
+body main .container .characters section.cList ul li {
   list-style: none;
   font-size: 1rem;
   letter-spacing: 0.125rem;
@@ -174,19 +183,19 @@ body main .container .characters section ul li {
   font-family: "Roboto", sans-serif;
 }
 
-body main .container .characters section ul li:hover {
+body main .container .characters section.cList ul li:hover {
   background-color: #444444;
 }
 
-body main .container .characters section ul .active {
+body main .container .characters section.cList ul .active {
   background-color: #444444;
 }
 
-body main .container .characters section ul .bgc-dim {
+body main .container .characters section.cList ul .bgc-dim {
   background-color: #8e8e8e;
 }
 
-body main .container .characters section ul .bgc-light {
+body main .container .characters section.cList ul .bgc-light {
   background-color: #e1dede;
 }
 

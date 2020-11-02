@@ -156,7 +156,14 @@ body {
                background-color: $dimmerr-grey;
                @include title;
             }
-            section {
+            section.into {
+               margin: 100px;
+               text-align: center;
+               h1 {
+                  width: 100%;
+               }
+            }
+            section.cList {
                ul {
                   margin-top: 0;
                   padding: 0;
