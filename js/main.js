@@ -241,69 +241,58 @@ backBtn.addEventListener("click", async () => {
          let charName10 = document.querySelector(".char10");
          charName10.innerHTML = characters.results[9].name;
          //-----------
-         let homeWorld0 = [];
+         let allWorld = [];
          fetch(characterArr[0].homeworld)
             .then((res) => res.json())
             .then((home0) => {
-               homeWorld0.push(home0);
+               allWorld.push(home0);
             });
-         let homeWorld1 = [];
          fetch(characterArr[1].homeworld)
             .then((res) => res.json())
             .then((home1) => {
-               homeWorld1.push(home1);
+               allWorld.push(home1);
             });
-         let homeWorld2 = [];
          fetch(characterArr[2].homeworld)
             .then((res) => res.json())
             .then((home2) => {
-               homeWorld2.push(home2);
+               allWorld.push(home2);
             });
-         let homeWorld3 = [];
          fetch(characterArr[3].homeworld)
             .then((res) => res.json())
             .then((home3) => {
-               homeWorld3.push(home3);
+               allWorld.push(home3);
             });
-         let homeWorld4 = [];
          fetch(characterArr[4].homeworld)
             .then((res) => res.json())
             .then((home4) => {
-               homeWorld4.push(home4);
+               allWorld.push(home4);
             });
-         let homeWorld5 = [];
          fetch(characterArr[5].homeworld)
             .then((res) => res.json())
             .then((home5) => {
-               homeWorld5.push(home5);
+               allWorld.push(home5);
             });
-         let homeWorld6 = [];
          fetch(characterArr[6].homeworld)
             .then((res) => res.json())
             .then((home6) => {
-               homeWorld6.push(home6);
+               allWorld.push(home6);
             });
-         let homeWorld7 = [];
          fetch(characterArr[7].homeworld)
             .then((res) => res.json())
             .then((home7) => {
-               homeWorld7.push(home7);
+               allWorld.push(home7);
             });
-         let homeWorld8 = [];
          fetch(characterArr[8].homeworld)
             .then((res) => res.json())
             .then((home8) => {
-               homeWorld8.push(home8);
+               allWorld.push(home8);
             });
-         let homeWorld9 = [];
          fetch(characterArr[9].homeworld)
             .then((res) => res.json())
             .then((home9) => {
-               homeWorld9.push(home9);
+               allWorld.push(home9);
             });
-         console.log(homeWorld0);
-         console.log(homeWorld1);
-         console.log(homeWorld2);
+         console.log(allWorld);
          for (let y of allClick) {
             y.addEventListener("click", () => {
                hideCharacterDetails();
