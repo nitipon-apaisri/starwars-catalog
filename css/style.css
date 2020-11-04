@@ -3,6 +3,11 @@ p, h1, h2, h3, h4, h5, ul {
   margin: 0;
 }
 
+i {
+  font-size: 2em;
+  color: #424242;
+}
+
 .loader {
   color: #ffffff;
   font-size: 90px;
@@ -206,6 +211,15 @@ body main .container .characters .btn {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+body main .container .characters .btn i:hover {
+  color: #fff;
+}
+
+body main .container .characters .btn p {
+  font-size: 1.51em;
+  letter-spacing: 0.75rem;
 }
 
 body main .container .details {

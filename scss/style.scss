@@ -12,6 +12,10 @@ p,h1,h2,h3,h4,h5, ul {
    padding: 0;
    margin: 0;
 }
+i {
+   font-size: 2em;
+   color: $dimmer-grey;
+}
 .loader {
    color: #ffffff;
    font-size: 90px;
@@ -193,6 +197,13 @@ body {
                padding: 20px;
                display: flex;
                justify-content: space-around;
+               i:hover {
+                  color: #fff;
+               }
+               p {
+                  font-size: 1.51em;
+                  letter-spacing: 0.75rem;
+               }
             }
          }
          .details {
